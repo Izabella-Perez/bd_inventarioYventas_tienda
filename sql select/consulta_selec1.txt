@@ -1,5 +1,0 @@
--- Consulta de clientes de una ciudad especifica
-SELECT p.fecha_pedido, p.estado
-FROM Pedidos as p
-JOIN Clientes c ON p.cliente_id = c.id
-WHERE c.ciudad = 'Madrid';
