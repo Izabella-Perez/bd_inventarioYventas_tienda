@@ -1,0 +1,9 @@
+--vistas2 
+CREATE VIEW productos_agotados AS
+SELECT
+    nombre,
+    stock
+FROM
+    productos
+WHERE
+    stock = 0;

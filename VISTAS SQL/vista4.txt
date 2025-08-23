@@ -1,0 +1,13 @@
+--vista4
+CREATE VIEW ingresos_por_categoria AS
+SELECT
+    c.nombre AS categoria,
+    SUM(dv.cantidad * dv.precio_unitario) AS ingresos
+FROM
+    categorias c
+JOIN
+    productos p ON c.categoria_id = p.categoria_id
+JOIN
+    detalle_venta dv ON p.producto_id = dv.producto_id
+GROUP BY
+    c.nombre;

@@ -1,0 +1,14 @@
+--Vista1
+CREATE VIEW inventario_detallado AS
+SELECT
+    p.nombre AS producto,
+    c.nombre AS categoria,
+    pr.nombre AS proveedor,
+    p.stock
+FROM
+    productos p
+JOIN
+    categorias c ON p.categoria_id = c.categoria_id
+JOIN
+    proveedores pr ON p.proveedor_id = pr.proveedor_id;
+

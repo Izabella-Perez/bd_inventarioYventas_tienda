@@ -1,0 +1,11 @@
+--vista3
+CREATE VIEW total_gastado_por_cliente AS
+SELECT
+    cl.nombre,
+    SUM(v.total) AS gasto_total
+FROM
+    clientes cl
+JOIN
+    ventas v ON cl.cliente_id = v.cliente_id
+GROUP BY
+    cl.nombre;

@@ -1,0 +1,9 @@
+-- vista5
+CREATE VIEW productos_por_proveedor AS
+SELECT
+    pr.nombre AS proveedor,
+    p.nombre AS producto
+FROM
+    proveedores pr
+JOIN
+    productos p ON pr.proveedor_id = p.proveedor_id;
