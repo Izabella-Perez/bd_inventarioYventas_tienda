@@ -1,0 +1,8 @@
+-- Insertar datos en la tabla detalle_venta
+INSERT INTO detalle_venta (venta_id, producto_id, cantidad, precio_unitario) VALUES
+(1, 1, 1, 1500.00),
+(2, 3, 1, 850.00),
+(3, 4, 1, 75.00),
+(3, 5, 1, 250.00),
+(4, 2, 1, 120.00),
+(5, 5, 2, 250.00);
