@@ -1,0 +1,6 @@
+-- Insertar datos en la tabla clientes
+INSERT INTO clientes (nombre, apellido, email, telefono, direccion) VALUES
+('Juan', 'Pérez', 'juan.perez@email.com', '9876-5432', 'Colonia Central, Tegucigalpa'),
+('Ana', 'García', 'ana.garcia@email.com', '8765-4321', 'Barrio Abajo, San Pedro Sula'),
+('Carlos', 'López', 'carlos.lopez@email.com', '3456-7890', 'Residencial El Sauce, La Ceiba'),
+('María', 'Rodríguez', 'maria.rodriguez@email.com', '2345-6789', 'Urb. Los Robles, Tegucigalpa');
