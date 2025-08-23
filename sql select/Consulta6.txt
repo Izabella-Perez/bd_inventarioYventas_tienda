@@ -7,4 +7,4 @@ FROM
 GROUP BY
     fecha_venta
 ORDER BY
-    fecha_venta DESC;
+    fecha_venta DESC
