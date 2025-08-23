@@ -1,0 +1,7 @@
+-- Insertar datos en la tabla productos
+INSERT INTO productos (nombre, descripcion, precio, stock, categoria_id, proveedor_id) VALUES
+('Laptop Dell XPS', 'Portátil de alto rendimiento', 1500.00, 50, 1, 1),
+('Silla de Oficina', 'Silla ergonómica para oficina', 120.00, 100, 3, 2),
+('Smart TV 55"', 'Televisor inteligente 4K', 850.00, 30, 1, 1),
+('Cafetera Eléctrica', 'Cafetera programable', 75.00, 200, 2, 2),
+('Monitor 27"', 'Monitor para computadora', 250.00, 75, 1, 1);
