@@ -2,12 +2,12 @@
 
 
 ###### Integrantes
-17 Izabella Pérez
-10 Doris Padilla 
-23 María Gonzales
-42 Enrique Mejía
-49 Jafet Mejía
-52 Juan Ramírez
+* 17 Izabella Pérez
+* 10 Doris Padilla 
+* 23 María Gonzales
+* 42 Enrique Mejía
+* 49 Jafet Mejía
+* 52 Juan Ramírez
 
 
 ###### 11° BTP INFORMATICA  -  Profe German Solorzano
