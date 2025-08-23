@@ -1,0 +1,4 @@
+--Detalle de ventas por clientes
+SELECT v.fecha_venta, cl.nombre, v.total
+FROM ventas v
+JOIN clientes cl ON v.cliente_id = cl.cliente_id;

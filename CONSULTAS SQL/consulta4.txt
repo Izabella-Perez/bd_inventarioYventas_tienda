@@ -1,0 +1,5 @@
+--Productos más caros que el promedio
+SELECT nombre, precio
+FROM productos
+WHERE precio > (SELECT AVG(precio) FROM productos);
+

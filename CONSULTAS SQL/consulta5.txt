@@ -1,0 +1,14 @@
+-- Clientes que han comprado un producto en especificó 
+
+SELECT 
+    cl.nombre
+FROM
+    clientes cl
+JOIN
+    ventas v ON cl.cliente_id = v.cliente_id
+JOIN
+    detalle_venta dv ON v.venta_id = dv.venta_id
+JOIN
+    productos p ON dv.producto_id = p.producto_id
+WHERE
+    p.nombre = 'Laptop Dell XPS';

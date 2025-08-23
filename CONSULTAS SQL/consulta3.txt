@@ -1,0 +1,11 @@
+--Ventas totales por proveedor
+SELECT pr.nombre AS proveedor,
+    SUM(dv.cantidad * dv.precio_unitario) AS total_ventas
+FROM
+    detalle_venta dv
+JOIN
+    productos p ON dv.producto_id = p.producto_id
+JOIN
+    proveedores pr ON p.proveedor_id = pr.proveedor_id
+GROUP BY
+    pr.nombre;

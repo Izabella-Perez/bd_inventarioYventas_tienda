@@ -1,0 +1,6 @@
+--Productos vendidos con su categoría
+Select p.nombre, c.nombre As categoria
+FROM
+    productos p
+JOIN
+    categorias c ON p.categoria_id = c.categoria_id;
