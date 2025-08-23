@@ -1,0 +1,6 @@
+--Proveedor con el producto más caro 
+SELECT
+    p.nombre AS nombre_proveedor,
+    (SELECT MAX(precio) FROM productos WHERE proveedor_id = p.proveedor_id) AS max_precio
+FROM
+    proveedores p;
