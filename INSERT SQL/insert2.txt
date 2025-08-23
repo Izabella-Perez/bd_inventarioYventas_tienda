@@ -1,0 +1,4 @@
+-- Insertar datos en la tabla proveedores
+INSERT INTO proveedores (nombre, contacto, telefono, direccion) VALUES
+('Tecno S.A.', 'Luis Fuentes', '1111-2222', 'Ave. Principal, Tegucigalpa'),
+('Suministros del Norte', 'Elena Flores', '3333-4444', 'Calle 5, San Pedro Sula');

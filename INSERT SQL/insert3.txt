@@ -1,0 +1,5 @@
+-- Insertar datos en la tabla categorias
+INSERT INTO categorias (nombre) VALUES
+('Electrónica'),
+('Hogar'),
+('Oficina');
