@@ -1,0 +1,9 @@
+--Venta promedio por cliente
+SELECT
+    cl.nombre, AVG(ventas_cliente.total) AS promedio_venta
+FROM
+    clientes cl
+JOIN
+    (SELECT cliente_id, total FROM ventas) AS ventas_cliente ON cl.cliente_id = ventas_cliente.cliente_id
+GROUP BY
+    cl.nombre;
