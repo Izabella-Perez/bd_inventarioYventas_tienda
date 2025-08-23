@@ -1,0 +1,10 @@
+--Ventas totales por día 
+SELECT
+    fecha_venta,
+    SUM(total) AS total_diario
+FROM
+    ventas
+GROUP BY
+    fecha_venta
+ORDER BY
+    fecha_venta DESC;

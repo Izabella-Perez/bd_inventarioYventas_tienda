@@ -1,0 +1,9 @@
+--proveedores con productos en stock menor de 50
+SELECT 
+    pr.nombre AS proveedor
+FROM
+    proveedores pr
+JOIN
+    productos p ON pr.proveedor_id = p.proveedor_id
+WHERE
+    p.stock < 50;

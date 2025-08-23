@@ -1,0 +1,9 @@
+--Productos sin ventas
+SELECT
+    p.nombre
+FROM
+    productos p
+LEFT JOIN
+    detalle_venta dv ON p.producto_id = dv.producto_id
+WHERE
+    dv.producto_id IS NULL;
