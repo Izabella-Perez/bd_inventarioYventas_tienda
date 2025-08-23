@@ -1,5 +1,0 @@
---Conteo de ventas por cliente 
-SELECT
-    cl.nombre,
-    (SELECT COUNT(venta_id) FROM ventas WHERE cliente_id = cl.cliente_id) AS numero_de_ventas
-FROM clientes cl;
