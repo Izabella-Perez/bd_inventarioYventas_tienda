@@ -1,7 +1,0 @@
---Nombre del cliente en el detalle de venta 
-SELECT
-    venta_id,
-    fecha_venta,
-    (SELECT nombre FROM clientes WHERE cliente_id = v.cliente_id) AS nombre_cliente
-FROM
-    ventas v;
